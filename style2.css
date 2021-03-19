@@ -1,0 +1,57 @@
+body{
+  background-image: url("https://cdn.pixabay.com/photo/2015/10/26/15/21/film-background-1007306_1280.png");
+  background-position: center;
+  background-size: cover;
+  height: 750px;
+  background-repeat: no-repeat;
+}
+#key
+{
+  width: 50%;
+  margin: 0 auto;
+  position: absolute;
+      top: 50%;
+      left: 50%;
+  transform: translate(-50%, -50%);
+}
+#ba
+{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.dzk{
+  text-decoration: none;
+  text-align: center;
+  color: #3cbabe;
+  border: 2px solid #3cbabe;
+  border-radius: 4px;
+  position: relative;
+  width: 31%;
+  line-height: 40px;
+  display: inline-block;
+  font-family: Arial;
+  font-weight: 600;
+  overflow: hidden;
+}
+.dzk:before {
+  content: "";
+  background-color: rgba(255,255,255,0.5);
+  height: 100%;
+  width: 40%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -70%;
+  transform: skewX(-45deg) translateX(0%);
+  transition: none;
+}
+.dzk:hover{
+  background-color: #3cbabe;
+  color: #ffffff;
+  border-bottom: 2% solid #319598;
+}
+.dzk:hover:before{
+  transform: skewX(-45deg) translateX(250%);
+  transition: all 0.4s ease-in;
+}
